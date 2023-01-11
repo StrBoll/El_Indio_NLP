@@ -1,0 +1,262 @@
+{"intents": [
+    {"tag": "greetings",
+     "patterns": ["hello", "hey", "hi", "good day", "whats up", "greetings", "how are you", "how is it going?", "hey there","Hi guy", "Hey Guy", "howdy guy"],
+     "responses": ["Hello!", "Hey!", "What can I do for you?"]
+     },
+    {"tag": "farewell",
+     "patterns": ["bye bye", "goodbye", "bye", "see you later", "have a good one", "good bye"],
+     "responses": ["See you next time!", "Talk to you later!", "Have a good one", "later alligator"]
+     },
+    {"tag": "name",
+     "patterns": ["Whats your name", "What is your name", "Who are you?", "What are you called", "can you tell me your name?", "say your name"],
+     "responses": ["My name is Guy", "I'm Guy, the AI", "My friends call me Guy"]
+     },
+    {"tag": "age",
+     "patterns": ["How old are you?", "whats your age?", "age?", "When were you made?"],
+     "responses": ["I am Version 0.1", "Version 0.1", "not that old"]
+    },
+    {"tag": "Run",
+      "patterns": ["How do you work", "How does this AI run", "how does ai work", "how were you made", "how are you able to talk to me"],
+      "responses": ["I am a Natural Language Processing Artificial Intelligence"]
+    },
+    {"tag": "WhyMade",
+      "patterns": ["why were you made", "what were you made for", "whats your purpose", "what do you do","why are you here", "whats this for", "what is the point of this AI"],
+      "responses": ["I am a friendly chatbot made for a local Gainesville establishment: El Indio Mexican Restaurant. El Indio is a Gainesville gem revered by University of Florida students and the broader Gainesville community. However, the menu is extremely long and therefore I am here to aid in any questions that restaurant patrons may have."]
+    },
+    {"tag": "FullMenu",
+      "patterns": ["what do you sell", "what food is available", "what food does the restaurant sell", "what food is at the restaurant", "what food does el indio have", "what kind of food does el indio sell", "what food can I get at el indio", "what are the food options at el indio", "whats the menu", "can i see the menu", "let me see the menu", "what does the menu look like"],
+      "responses": ["El Indio sells a variety of Mexican cuisine including Tacos, Burritos, Quesadillas, Enchaladas, Bowls and Desserts. Ask about any of these specific foods and I can give you an extensive list of options for each."]
+
+    },
+    {"tag": "NLP",
+      "patterns": ["What is natural language processing", "what is nlp", "how does natural language processing work", "how does nlp work"],
+      "responses": ["Natural Language Processing (NLP) is an area of machine learning involving understanding and processing human language. Namely, there are two approaches which an AI can take to process human language, syntactical and semantical Analysis. I use syntactical analysis."]
+    },
+    {"tag": "Syntactical Analysis",
+        "patterns": ["What is syntactical analysis", "whats syntactical analysis", "whats semantical analysis", "how does syntactical analysis work", "how does semantical analysis work"],
+        "responses": ["I use syntactical Analysis, it makes use of grammatical/word relationships and sentence structure to analyse natural language. This is possible through removing all punctuation, breaking sentences into sub-pieces. As well, it converts words into their basic form, known as lemmatisation. I could go on, but you don't want to hear about that stuff :)"]
+    },
+    {"tag": "creator",
+        "patterns": ["Who made you", "who is your creator", "who created you", "who were you created by", "what person made you"],
+        "responses": ["My creator is a CS Student named Phillip", "I was created by Phillip Boll", "My father is Phillip", "I am a product of Phillip", "Phillip Boll is to blame"]
+    },
+    {"tag": "BreakfastMenu",
+        "patterns": ["Whats the breakfast menu","Whats for breakfast", "What is served at Breakfast", "Does El Indio serve Breakfast","El Indio Breakfast Menu", "Breakfast menu"],
+        "responses": ["El Indio's breakfast menu includes the following: Huevos Ranchos - $7.99, Breakfast Taco - $2.39, Breakfast Burrito - $4.49, Breakfast Quesadilla = $5.19"]
+    },
+    {"tag": "HuevosRancheros",
+          "patterns": ["What is the Huevos Rancheros","What is Huevos Rancheros", "Whats included with the Huevos Rancheros", "Whats in the Huevos Rancheros", "How much does the Huevos Rancheros cost", "How much is the Huevos Rancheros", "What is the price of Huevos Rancheros"],
+          "responses": ["Priced at $5.19, the Huevos Rancheros includes 2 Eggs served over beans & rice with our secret sauce on top and two flour tortillas"]
+    },
+    {"tag": "BreakfastItems",
+          "patterns": ["What is the Breakfast Taco","What is the Breakfast Quesadilla", "What is the Breakfast Burrito", "Whats in the breakfast taco", "whats in breakfast burrito", "whats in breakfast quesadilla"],
+          "responses": ["All breakfast tacos, burritos, and quesadillas are filled with scrambled egg, potato chunks, cheese and your choice of salsa verde, salsa fresca or plain salsa."]
+    },
+    {"tag": "AboutUs",
+          "patterns": ["Whats El Indio", "What is El Indio", "What kind of restaurant is El Indio", "What cuisine does El Indio serve", "What style of food does El Indio have", "What does El Indio Have"],
+          "responses": ["El Indio is a Mexican Restaurant originally founded in the heart of Gainesville, Florida", "El Indio serves mexican cuisine in the heart of Gainesville, Florida", "El Indio caters Mexican style cuisine to the heart of Gainesville"]
+    },
+    {"tag": "Founded",
+          "patterns": ["When was El Indio founded", "What year was El Indio created", "When did El Indio start up", "What year was El Indio founded"],
+          "responses": ["El Indio was founded in 1992", "El Indio was established in the year 1992", "In 1992, El Indio was culminated in the heart of Gainesville"]
+    },
+    {"tag": "locations",
+          "patterns": ["What locations does El Indio have", "Where is El Indio", "Where is it located", "Where is the restaurant located", "What is the address of El Indio"],
+          "responses": ["El Indio has 2 locations. Location 1: 407 NW 13th St, Gainesville, FL 32601. Location 2: 5011 NW 34th Blvd Gainesville, FL 32605"]
+    },
+    {"tag": "hours",
+          "patterns": ["How long is the restaurant open", "When does El Indio close", "How long is El Indio open for", "What are the hours","When is el indio open"],
+          "responses": ["Be more specific, you can ask for the hours of 13th street or 34th street", "El Indio has two locations with different hours, ask for either 13th street or 34th street hours"]
+    },
+    {"tag": "13th",
+          "patterns": ["What are the hours of 13th street", "Hours of 13th st", "How long is El Indio on 13th street open for", "When does 13th street open", "when does 13th street close"],
+          "responses": ["El Indio on 13th street operates from 9 AM to 10 PM, Monday through Sunday"]
+    },
+    {"tag": "34th",
+          "patterns": ["What are the hours of 34th street", "Hours of 34th st", "How long is El Indio on 34th street open for", "When does 34th street open", "when does 34th street close"],
+          "responses": ["El Indio on 34th street operates from 8 AM to 10 PM, Monday through Sunday"]
+    },
+    {"tag": "FamousTacosCost",
+          "patterns": ["How much is the famous tacos", "How much is a ground beef taco", "how much is a chicken taco", "how much is a black bean taco", "how much is a veggie taco", "what does a famous taco cost", "what does a ground beef taco cost", "what does a chicken taco cost","what does a black bean taco cost", "what does a veggie taco cost"],
+          "responses": ["A single famous taco costs $3.29 and three tacos costs $8.79", "One famous taco is $3.29, three is $8.79", "One famous taco will cost you $3.29, three will cost you $8.79", "A single famous taco will run you $3.29, three will run you $8.79"]
+    },
+    {"tag": "StreetTacosCost",
+          "patterns": ["How much is the street tacos", "How much is an al pastor taco", "how much is a carne asada taco", "how much is a carnitas taco", "how much is a lengua taco", "how much is a beef tongue taco", "what does a street taco cost", "How much is the grilled chicken taco", "how much is the steak taco", "what does an al pastor taco cost", "what does a carne asada taco cost","what does a carnitas taco cost", "what does a lengua taco cost", "what does a beef tongue taco cost", "what does a grilled chicken taco cost", "what does a steak taco cost"],
+          "responses": ["A single street taco cost $3.79 (3.99 for lengua) and three tacos costs $9.99 (10.59 for lengua)", "One street taco is $3.79 ($3.99 for lengua), three is $9.99 ($10.59 for lengua)", "One street taco will cost you $3.29, three will cost you $9.99. However, lengua tacos cost $3.99 for one, and $10.59 for three", "A single taco will run you $3.79, three will run you $9.99. Lengua are the only exception, $3.99 for one and $10.59 for three."]
+    },
+    {"tag": "TacoStart",
+          "patterns": ["What are my options for taco fillings", "what comes in the tacos", "what meats are available for the tacos", "what kind of fillings are in the tacos", "what are the kinds of tacos available", "whats the taco menu", "what tacos do you have", "what are the tacos available", "What tacos do you sell"],
+          "responses": ["We have three categories of tacos including: Famous Tacos, Street Tacos, and local favorites. Ask about any of these"]
+    },
+    {"tag": "FamousTacos",
+          "patterns": ["What are the famous tacos", "whats in the famous tacos", "whats the famous taco menu", "what are famous tacos", "Show me the famous tacos"],
+          "responses": ["The famous taco options include: Ground Beef, Chicken, Black Bean, and Veggie Taco. Each comes with Beans, Cheese, Salsa Fresca, Lettuce, Sour cream and Guacamole."]
+    },
+    {"tag": "FavoritesTacosCost",
+          "patterns": ["How much are the local favorites tacos", "how much are the favorites tacos", "how much are the local favorites", "what does the local favorites cost", "how much money are the local favorites", "how much is the shredded beef taco", "what does the shredded beef taco cost", "how much money for the shredded beef taco", "What does the carne asada taco cost", "how much money is the carne asada taco", "what does the carne asada taco cost", "How much is the carnitas taco", "what does the carnitas taco cost", "how much for the carnitas taco", "how much is the tempeh taco", "what does the tempeh taco cost", "how much money is the tempeh taco", "How much is the fish taco", "how much does the fish taco cost", "how much money for the fish taco", "what would I have to pay for the fish taco"],
+          "responses": ["All local favorites tacos are one for $3.79 and three for $9.99", "One is $3.79 and three is $9.99"]
+
+    },
+    {"tag": "StreetTacos",
+          "patterns": ["What are the street tacos", "whats in the street tacos", "whats the street tacos menu", "what are street tacos", "Show me the street tacos"],
+          "responses": ["The street taco options include: Al Pastor, Carne Asada, Carnitas, Beef Tongue (Lengua), Grilled Chicken, and Steak taco. Each comes with cilantro, onions, lime, and a side of al pastor sauce."]
+    },
+    {"tag": "LocalTacos",
+          "patterns": ["What are the local favorites tacos", "whats in the local favorites tacos", "Whats the local favorites menu", "what are local favorites tacos", "Show me the local favorites"],
+          "responses": ["The local favorites options include: Shredded Beef taco, Carne Asada taco (Cheese, Salsa Fresca, Guacamole), Carnitas taco (Cheese, Lettuce, Sour cream), Tempeh taco (cheese, salsa fresca, lettuce, sour scream, guacamole) and Fish taco (fried fish fillet, spicy sauce, shredded cabbage, cheddar cheese) "]
+    },
+    {"tag": "Tempeh",
+          "patterns": ["What is tempeh", "what is the tempeh taco", "What meat is tempeh", "what is the tempeh burrito"],
+          "responses": ["Tempeh is a fermented soybean patty.", "It's fermented soybean patty."]
+    },
+    {"tag": "Carnitas",
+          "patterns": ["What is carnitas", "whats carnitas", "what meat is carnitas"],
+          "responses": ["Carnitas translates to little meats, and is a marbled cut of pork from the boston butt region."]
+    },
+    {"tag": "BostonButt",
+          "patterns": ["What is boston butt", "what is the boston butt", "what cut of meat is the boston butt", "why is it called the boston butt"],
+          "responses": ["The boston butt is the prime cut of the upper shoulder on a swine, famous for its tenderness and sweet flavor."]
+    },
+    {"tag": "BurritoStart",
+          "patterns": ["How much are the burritos", "how much do burritos cost", "what do the burritos cost", "how much money is a burrito"],
+          "responses": ["Burritos are priced at the type of meat used. If you'd like to see the burrito menu simply ask. Add-ons are also available."]
+    },
+    {"tag": "BurritoMenu",
+          "patterns": ["Can I see the burrito menu", "Let me see the burrito options", "Show me the burrito menu", "show me the burrito options", "tell me the burrito options", "what are the burrito options"],
+          "responses": ["The basic options for burritos are: Black Bean, Ground beef, chicken, and veggie. We also have Carne Asada, Shredded Beef, Carnitas, Tempeh, Fajita, Al Pastor, Grilled chickem, Fish, and Lengua."]
+    },
+    {"tag": "BlackBeanBurritoCost",
+          "patterns": ["How much is the black bean burrito", "what does the black bean burrito cost", "how much for the bean burrito", "what does the bean burrito cost", "how much do I have to pay for a bean burrito"],
+          "responses": ["The black bean burrito costs $4.19", "It's $4.19", "A black bean burrito will run you $4.19"]
+    },
+    {"tag": "ChickenBurritoCost",
+          "patterns": ["How much is the chicken burrito", "what does the chicken burrito cost", "how much for the chicken burrito", "what does the chicken burrito cost", "how much do I have to pay for a chicken burrito"],
+          "responses": ["The chicken burrito costs $6.29", "It's $6.29", "A chicken burrito will run you $6.29"]
+    },
+    {"tag": "BeefBurritoCost",
+          "patterns": ["How much is the ground beef burrito", "what does the ground beef burrito cost", "how much for the beef burrito", "what does the ground beef burrito cost", "how much do I have to pay for a ground beef burrito"],
+          "responses": ["The ground beef burrito costs $6.29", "It's $6.29", "A ground beef burrito will run you $6.29"]
+    },
+    {"tag": "VeggieBurritoCost",
+          "patterns": ["How much is the veggie burrito", "what does the veggie burrito cost", "how much for the veggie burrito", "what does the veggie burrito cost", "how much do I have to pay for a veggie burrito"],
+          "responses": ["The veggie burrito costs $6.29", "It's $6.29", "A veggie burrito will run you $6.29"]
+    },
+    {"tag": "CarneBurritoCost",
+          "patterns": ["How much is the carne asada burrito", "what does the carne asada burrito cost", "how much for the carne burrito", "what does the carne burrito cost", "how much do I have to pay for a carne asada burrito"],
+          "responses": ["The carne asada burrito costs $6.99", "It's $6.99", "A black bean burrito will run you $6.99"]
+    },
+    {"tag": "ShreddedBurritoCost",
+          "patterns": ["How much is the shredded beef burrito", "what does the shredded beef burrito cost", "how much for the shredded beef burrito", "what does the shredded beef burrito cost", "how much do I have to pay for a shredded beef burrito"],
+          "responses": ["The shredded beef burrito costs $6.99", "It's $6.99", "A shredded beef burrito will run you $6.99"]
+    },
+    {"tag": "CarnitasBurritoCost",
+          "patterns": ["How much is the carnitas burrito", "what does the carnitas burrito cost", "how much for the carnitas burrito", "what does the carnitas cost", "how much do I have to pay for a carnitas burrito"],
+          "responses": ["The carnitas burrito costs $6.99", "It's $6.99", "A carnitas burrito will run you $6.99"]
+    },
+    {"tag": "TempehBurritoCost",
+          "patterns": ["How much is the tempeh burrito", "what does the tempeh burrito cost", "how much for the tempeh burrito", "what does the tempeh burrito cost", "how much do I have to pay for a tempeh burrito"],
+          "responses": ["The tempeh burrito costs $6.99", "It's $6.99", "A tempeh burrito will run you $6.99"]
+    },
+    {"tag": "FajitaBurritoCost",
+          "patterns": ["How much is the fajita burrito", "what does the fajita burrito cost", "how much for the fajita burrito", "what does the fajita burrito cost", "how much do I have to pay for a fajita burrito"],
+          "responses": ["The fajita burrito costs $9.99", "It's $9.99", "A fajita burrito will run you $9.99"]
+    },
+    {"tag": "AlPastorBurritoCost",
+          "patterns": ["How much is the Al Pastor burrito", "what does the al pastor burrito cost", "how much for the al pastor burrito", "what does the al pastor burrito cost", "how much do I have to pay for an al pastor burrito"],
+          "responses": ["The Al Pastor burrito costs $8.99", "It's $8.99", "An Al Pastor burrito will run you $8.99"]
+    },
+    {"tag": "GrilledChickenBurritoCost",
+          "patterns": ["How much is the grilled chicken burrito", "what does the grilled chicken burrito cost", "how much for the grilled chicken burrito", "what does the grilled chicken burrito cost", "how much do I have to pay for a grilled chicken burrito"],
+          "responses": ["The grilled chicken burrito costs $6.99", "It's $6.99", "A grilled chicken burrito will run you $6.99"]
+    },
+    {"tag": "FishBurritoCost",
+          "patterns": ["How much is the fish burrito", "what does the fish burrito cost", "how much for the fish burrito", "what does the fish burrito cost", "how much do I have to pay for a fish burrito"],
+          "responses": ["The fried fish burrito costs $6.99", "It's $6.99", "A fried fish burrito will run you $6.99"]
+    },
+    {"tag": "LenguaBurritoCost",
+          "patterns": ["How much is the lengua burrito", "what does the lengua burrito cost", "how much for the lengua burrito", "what does the lengua burrito cost", "how much do I have to pay for a lengua burrito"],
+          "responses": ["The lengua burrito costs $9.99", "It's $9.99", "A lengua burrito will run you $9.99"]
+    },
+    {"tag": "ChickenBurritoContent",
+          "patterns": ["What is in the chicken burrito", "whats the chicken burrito", "what comes in the chicken burrito", "what is the chicken burrito made of", "whats inside of the chicken burrito"],
+          "responses": ["Chicken, black beans, rice, lettuce, salsa fresca and Cheese"]
+    },
+    {"tag": "BlackBeanBurritoContent",
+          "patterns": ["What is in the black bean burrito", "whats the bean burrito", "what comes in the black bean burrito", "what is the bean burrito made of", "whats inside of the black bean burrito"],
+          "responses": ["Black beans, rice, lettuce, salsa fresca and cheese"]
+    },
+    {"tag": "GroundBeefBurritoContent",
+          "patterns": ["What is in the ground beef burrito", "whats the ground beef burrito", "what comes in the ground beef burrito", "what is the ground beef burrito made of", "whats inside of the ground beef burrito"],
+          "responses": ["Ground beef, black beans, rice, lettuce, salsa fresca and Cheese"]
+    },
+    {"tag": "VeggieBurritoContent",
+          "patterns": ["What is in the veggie burrito", "whats the veggie burrito", "what comes in the veggie burrito", "what is the veggie burrito made of", "whats inside of the veggie burrito"],
+          "responses": ["Sour cream, guacamole, black beans, rice, lettuce, salsa fresca and Cheese"]
+    },
+    {"tag": "CarneBurritoContent",
+          "patterns": ["What is in the carne asada burrito", "whats the carne asada burrito", "what comes in the carne asada burrito", "what is the carne asada burrito made of", "whats inside of the carne asada burrito"],
+          "responses": ["Grilled marinated steak with guacamole, salsa fresca, and cheese"]
+    },
+    {"tag": "ShreddedBeefBurritoContent",
+          "patterns": ["What is in the shredded beef burrito", "whats the shredded beef burrito", "what comes in the shredded beef burrito", "what is the shredded beef burrito made of", "whats inside of the shredded beef burrito"],
+          "responses": ["Slow roasted beef, lettuce, salsa fresca, beans, sour cream and cheese"]
+    },
+    {"tag": "CarnitasBurritoContent",
+          "patterns": ["What is in the carnitas burrito", "whats the carnitas burrito", "what comes in the carnitas burrito", "what is the carnitas burrito made of", "whats inside of the carnitas burrito"],
+          "responses": ["Pork shoulder, beans, lettuce, sour cream and cheese"]
+    },
+    {"tag": "TempehBurritoContent",
+          "patterns": ["What is in the tempeh burrito", "whats the tempeh burrito", "what comes in the tempeh burrito", "what is the tempeh burrito made of", "whats inside of the tempeh burrito"],
+          "responses": ["Fermented Soybean, lettuce, salsa fresca, sour cream, guacamole and cheese"]
+    },
+    {"tag": "FajitaBurritoContent",
+          "patterns": ["What is in the fajita burrito", "whats the fajita burrito", "what comes in the fajita burrito", "what is the fajita burrito made of", "whats inside of the fajita burrito"],
+          "responses": ["The fajita burrito is one of our largest burritos with a 12 inch flour tortilla, steak, chicken or mix of both. Including beans, rice, sour cream, grilled veggies, guacamole and cheese dip."]
+    },
+    {"tag": "AlPastorBurritoContent",
+          "patterns": ["What is in the al pastor burrito", "whats the al pastor burrito", "what comes in the al pastor burrito", "what is the al pastor burrito made of", "whats inside of the al pastor burrito"],
+          "responses": ["Shepard-style marinated pork, beans, rice, cheese, pineapple, onion and cilantro"]
+    },
+    {"tag": "GrilledChickenBurritoContent",
+          "patterns": ["What is in the grilled chicken burrito", "whats the grilled chicken burrito", "what comes in the grilled chicken burrito", "what is the grilled chicken burrito made of", "whats inside of the grilled chicken burrito"],
+          "responses": ["Grilled chicken, beans, cheese, salsa fresca and lettuce"]
+    },
+    {"tag": "FishBurritoContent",
+          "patterns": ["What is in the fish burrito", "whats the fish burrito", "what comes in the fish burrito", "what is the fish burrito made of", "whats inside of the fish burrito"],
+          "responses": ["Fried fish fillet, spicy sauce, shredded cabbage and cheese"]
+    },
+    {"tag": "LenguaBurritoContent",
+          "patterns": ["What is in the lengua burrito", "whats the lengua burrito", "what comes in the lengua burrito", "what is the lengua burrito made of", "whats inside of the lengua burrito"],
+          "responses": ["Cow tongue, beans, rice, cheese, onions and cilantro"]
+    },
+    {"tag": "BurritoAddOns",
+          "patterns": ["What are the add-ons", "what are the add ons", "what can I add onto my burrito", "What add ons are available for the burrito", "what add ons are available", "what can I add onto the burrito", "Burrito add ons"],
+          "responses": ["Burrito add-on options are as follows: California style, Super style, Double Wrap. If you'd like to learn more about a specific burrito style simply ask."]
+    },
+    {"tag": "CaliforniaStyle",
+          "patterns": ["What is california style", "whats the california style", "what is the california style add on", "what is the california style burrito"],
+          "responses": ["California style means adding cheese dip on top, sour cream and guacamole inside, and serving the burrito in a pan.", "The california style add on is cheese dip on top, sour cream & guac inside, and to top it off the burrito is served in a pan"]
+    },
+    {"tag": "SuperStyle",
+          "patterns": ["What is super style", "whats the super style", "what is the super style add on", "what is the super style burrito"],
+          "responses": ["Making a burrito super-style means adding ranchero sauce & melted jack cheese on the top, and serving it in a pan.", "The super-style adds ranchero sauce and melted jack cheese onto the burrito, and serving it in a pan"]
+    },
+    {"tag": "DoubleWrap",
+          "patterns": ["What is the double wrap", "whats the double wrap", "what is the double wrap add on", "what is the double wrap burrito"],
+          "responses": ["Double wrap means addings a second layer of tortilla around a burrito"]
+    },
+    {"tag": "CaliforniaCost",
+          "patterns": ["How much does california style burrito cost", "how much does the california style add on cost", "how much is california style", "how much money is california style", "how much does california style add onto the cost of the burrito"],
+          "responses": ["The california style add-on costs $2.89", "It cost $2.89", "California style adds $2.89 to your total cost"]
+    },
+    {"tag": "SuperCost",
+          "patterns": ["How much does super style burrito cost", "how much does the super style add on cost", "how much is super style", "how much money is super style", "how much does super style add onto the cost of the burrito"],
+          "responses": ["The super style add-on costs $1.99", "It cost $1.99", "Super style adds $1.99 to your total cost"]
+    },
+    {"tag": "DoubleWrapCost",
+          "patterns": ["How much does double wrap burrito cost", "how much does the double wrap style add on cost", "how much is double wrap style", "how much money is double wrap style", "how much does double wrap style add onto the cost of the burrito"],
+          "responses": ["The double wrap style add-on costs $0.49", "It cost $0.49", "Double wrap style adds $0.49 to your total cost"]
+    }
+
+  ]
+}
